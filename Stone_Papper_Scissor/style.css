@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    background-color: #081b31;
+    color: #FFF;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choice{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background-color: #081b31;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+.player{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#user-score, #system-score{
+    font-size: 4rem;
+}
+
+.msg-container{
+    margin-top: 5rem;
+}
+
+#msg{
+    background-color: #081b31;
+    color: white;
+    font-size: 1.5rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+@media (max-width: 768px) {
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .choices {
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    #user-score, #system-score {
+        font-size: 3rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+    }
+
+    .player{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+
+    .choice {
+        height: 90px;
+        width: 90px;
+    }
+
+    img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .choices {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .score-board {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #user-score, #system-score {
+        font-size: 2.5rem;
+    }
+
+    #msg {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .player{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
